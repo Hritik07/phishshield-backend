@@ -1,7 +1,7 @@
 const { getDomainAge } = require('./whoisLookup');
 const { checkSimilarity } = require('./similarity');
-const { analyzeWithGemini } = require('./controllers/geminiController');
-const { logPhishingAttempt } = require('./controllers/databaseController');
+const { analyzeWithGemini } = require('../Controllers/geminiController');
+const { logPhishingAttempt } = require('../Controllers/databaseController');
 
 async function calculateRisk(url, snippet) {
     let score = 100; // [cite: 41]
